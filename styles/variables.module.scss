@@ -1,0 +1,11 @@
+$primary-red-color: #ff2e63;
+$primary-black-color: #252a34;
+$primary-teral-color: #08d9d6;
+$primary-grey-color: #eaeaea;
+
+:export {
+  primaryRedColor: $primary-red-color;
+  primaryBlackColor: $primary-black-color;
+  primaryTeralColor: $primary-teral-color;
+  primarygreyColor: $primary-grey-color;
+}
