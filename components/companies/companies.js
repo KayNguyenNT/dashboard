@@ -1,8 +1,4 @@
-import { Button, Col, Row } from "antd";
-import { Input } from "antd";
-import { Checkbox } from "antd";
-import clsx from "clsx";
-import { Table, Modal } from "antd";
+import { Button, Col, Row, Input, Checkbox, Table, Modal } from "antd";
 import CreateCompanies from "./create-companies";
 import { useState } from "react";
 import { PlusOutlined } from "@ant-design/icons";
@@ -97,10 +93,10 @@ function Companies() {
   };
 
   return (
-    <div classCompanyName="Companies">
+    <div className="Companies">
       <Row className="flex">
         <Col span={8}>
-          <p className="text-2xl">Comapnies</p>
+          <p className="text-2xl">Companies</p>
         </Col>
         <Col className="text-end" span={16}>
           <Button onClick={onRegisterCompany}>

@@ -33,7 +33,7 @@ const items = [
       getItem("Option 6", "6"),
     ]),
   ]),
-  getItem("Companies", "7", <SettingOutlined />),
+  getItem("Companies", "Companies", <SettingOutlined />),
   getItem("Points", "8", <CalendarOutlined />),
   getItem("Stages", "9", <CalendarOutlined />),
   getItem("Reports", "10", <CalendarOutlined />),
@@ -58,7 +58,7 @@ const LayoutPart = (props) => {
   return (
     <div>
       <Layout>
-        <Header style={{ height: 98 }}>
+        <Header style={{ height: "90px" }}>
           <MainHeader />
         </Header>
         <Content>
@@ -66,7 +66,7 @@ const LayoutPart = (props) => {
             <Sider width={250} style={{}}>
               <Menu
                 style={{ width: 250, height: "100%" }}
-                defaultSelectedKeys={["1"]}
+                defaultSelectedKeys={["Companies"]}
                 defaultOpenKeys={["sub1"]}
                 mode={mode}
                 theme={theme}

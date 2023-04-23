@@ -1,12 +1,15 @@
 import styles from "./login-form.module.scss";
 import clsx from "clsx";
-import { useRouter } from "next/router";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 function LoginForm() {
   const router = useRouter();
 
-  const onHandleLogin = () => {
-    router.push("/app-admin/companies");
+  const onHandleLogin = (e) => {
+    console.log("render");
+    e.preventDefault();
+    router.push("/app-admin/companies", undefined, { shallow: true });
   };
 
   return (
@@ -15,7 +18,13 @@ function LoginForm() {
         <input type="text" placeholder="Username" />
         <input type="password" placeholder="Password" />
         <button type="submit">Login</button>
-        <img className="w-14 absolute right-8" src="/images/logo.svg" />
+        <Image
+          className="absolute right-8"
+          src="/images/logo.svg"
+          alt="Logo"
+          width={50}
+          height={50}
+        />
       </form>
     </div>
   );

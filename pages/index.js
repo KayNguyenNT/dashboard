@@ -1,16 +1,13 @@
-import { useRouter } from "next/router";
 import { useEffect } from "react";
-import Layout from "../components/layout/layout";
+import Layout from "@/components/layout/layout";
+import { useRouter } from "next/router";
 
 function Homepage() {
+  const router = useRouter();
   useEffect(() => {
     router.push("/app-admin");
   }, []);
-  return <></>;
+  return <div>This site is loading....</div>;
 }
 
 export default Homepage;
-
-Homepage.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};

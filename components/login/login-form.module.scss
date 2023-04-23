@@ -3,6 +3,8 @@ $primary-black-color: #252a34;
 $primary-teral-color: #08d9d6;
 $primary-grey-color: #eaeaea;
 
+@import "@/styles/variables.module.scss";
+
 .loginForm {
   height: 100vh;
   background-color: $primary-red-color;
