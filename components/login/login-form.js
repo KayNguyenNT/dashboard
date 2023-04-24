@@ -7,7 +7,6 @@ function LoginForm() {
   const router = useRouter();
 
   const onHandleLogin = (e) => {
-    console.log("render");
     e.preventDefault();
     router.push("/app-admin/companies", undefined, { shallow: true });
   };

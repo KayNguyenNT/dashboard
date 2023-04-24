@@ -1,4 +1,5 @@
 import { Space, Table, Tag } from "antd";
+import { dataAddKey } from "@/components/logic/share-logic";
 const columns = [
   {
     title: "Name",
@@ -24,15 +25,7 @@ const columns = [
 ];
 
 function StagesComponent({ dataUser }) {
-  let dataUserAddKey = [];
-  if (dataUser) {
-    dataUserAddKey = dataUser.map((user, index) => {
-      return {
-        ...user,
-        key: `user${index}`,
-      };
-    });
-  }
+  let dataUserAddKey = dataAddKey(dataUser);
 
   return (
     <div>
